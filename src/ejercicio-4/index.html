@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Iframes: Optimización y Seguridad</title>
+</head>
+<body>
+    <h1>Iframes: Optimización y Seguridad</h1>
+    <p>
+        Al incrustar contenido externo conviene aplicar buenas prácticas: cargar los iframes solo cuando se
+        necesitan con loading="lazy", restringir lo que puede hacer el contenido con sandbox y usar siempre
+        direcciones HTTPS.
+    </p>
+
+    <h2>Carga diferida (loading="lazy") en un video</h2>
+    <iframe src="https://www.youtube.com/embed/iFToyCXIktE?si=jqYtMwwI6d4OM-xI" title="Video de YouTube con carga diferida" width="560" height="315" loading="lazy" allowfullscreen></iframe>
+
+    <h2>Seguridad con sandbox en una página externa</h2>
+    <iframe src="https://es.wikipedia.org/wiki/HTML" title="Artículo de Wikipedia sobre HTML en un iframe con sandbox" width="600" height="400" sandbox loading="lazy"></iframe>
+
+    <h2>Mapa con carga diferida y HTTPS</h2>
+    <iframe src="https://www.google.com/maps?q=Instituto+Tecnol%C3%B3gico+de+las+Am%C3%A9ricas+ITLA&amp;output=embed" title="Mapa del ITLA con carga diferida" width="600" height="400" loading="lazy"></iframe>
+</body>
+</html>
